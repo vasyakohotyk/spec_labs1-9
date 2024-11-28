@@ -1,0 +1,1 @@
+{"memory": 0.0, "history": [{"py/object": "labs.lab2.bll.Operation.Operation", "operation": "sqrt", "num1": 13.0, "num2": null, "result": 3.605551275463989}], "unary_operations": ["sqrt"], "double_operations": ["+", "-", "*", "/", "^", "%"], "decimals": 3, "log_file": "./logs/lab2/calc_error.log"}

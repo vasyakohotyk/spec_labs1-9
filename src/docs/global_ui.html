@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module global_ui</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">global_ui</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5C38098%5Cdesktop%5Cspec_langs%5Csrc%5Cglobal_ui.py">c:\users\38098\desktop\spec_langs\src\global_ui.py</a></td></tr></table>
+    <p><span class="code">This&nbsp;module&nbsp;provides&nbsp;the&nbsp;`<a href="#GlobalUI">GlobalUI</a>`&nbsp;class&nbsp;which&nbsp;serves&nbsp;as&nbsp;the&nbsp;main&nbsp;interface<br>
+for&nbsp;initializing,&nbsp;displaying,&nbsp;and&nbsp;managing&nbsp;a&nbsp;menu-driven&nbsp;user&nbsp;interface.<br>
+The&nbsp;user&nbsp;interface&nbsp;allows&nbsp;users&nbsp;to&nbsp;select&nbsp;and&nbsp;run&nbsp;various&nbsp;laboratory&nbsp;exercises.<br>
+&nbsp;<br>
+Classes:<br>
+--------<br>
+<a href="#GlobalUI">GlobalUI</a>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Provides&nbsp;methods&nbsp;to&nbsp;construct&nbsp;a&nbsp;menu,&nbsp;display&nbsp;the&nbsp;menu&nbsp;to&nbsp;the&nbsp;user,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;run&nbsp;the&nbsp;selected&nbsp;laboratory&nbsp;exercise.<br>
+&nbsp;<br>
+Functions:<br>
+----------<br>
+__init__(self):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Initializes&nbsp;the&nbsp;<a href="#GlobalUI">GlobalUI</a>&nbsp;instance&nbsp;and,&nbsp;if&nbsp;specified,&nbsp;starts&nbsp;a&nbsp;particular&nbsp;lab.<br>
+&nbsp;<br>
+menu(self):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Displays&nbsp;the&nbsp;main&nbsp;menu&nbsp;to&nbsp;the&nbsp;user.<br>
+&nbsp;<br>
+build_menu(self):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Constructs&nbsp;the&nbsp;menu&nbsp;with&nbsp;various&nbsp;lab&nbsp;options&nbsp;and&nbsp;controls&nbsp;using&nbsp;the&nbsp;MenuBuilder.<br>
+&nbsp;<br>
+__run_lab(self,&nbsp;lab=None):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Dynamically&nbsp;imports&nbsp;and&nbsp;runs&nbsp;the&nbsp;specified&nbsp;lab&nbsp;by&nbsp;calling&nbsp;its&nbsp;'run'&nbsp;method.</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="global_ui.html#GlobalUI">GlobalUI</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="GlobalUI">class <strong>GlobalUI</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Class&nbsp;<a href="#GlobalUI">GlobalUI</a>&nbsp;handles&nbsp;the&nbsp;graphical&nbsp;user&nbsp;interface&nbsp;for&nbsp;navigating&nbsp;different<br>
+specialized&nbsp;programming&nbsp;language&nbsp;labs.<br>
+&nbsp;<br>
+Methods:<br>
+-&nbsp;__init__:&nbsp;Initializes&nbsp;the&nbsp;<a href="#GlobalUI">GlobalUI</a>&nbsp;instance,<br>
+optionally&nbsp;runs&nbsp;a&nbsp;specific&nbsp;lab,<br>
+and&nbsp;builds&nbsp;the&nbsp;main&nbsp;menu.<br>
+-&nbsp;menu:&nbsp;Displays&nbsp;the&nbsp;main&nbsp;menu.<br>
+-&nbsp;build_menu:&nbsp;Constructs&nbsp;the&nbsp;menu&nbsp;using&nbsp;the&nbsp;MenuBuilder,&nbsp;setting&nbsp;various&nbsp;options<br>
+&nbsp;and&nbsp;descriptions.<br>
+-&nbsp;__run_lab:&nbsp;Executes&nbsp;a&nbsp;specified&nbsp;lab&nbsp;by&nbsp;dynamically&nbsp;importing&nbsp;and<br>
+running&nbsp;its&nbsp;`run`&nbsp;method.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="GlobalUI-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initializes&nbsp;the&nbsp;instance&nbsp;of&nbsp;the&nbsp;class.<br>
+If&nbsp;'use_lab'&nbsp;is&nbsp;True,&nbsp;continuously&nbsp;runs&nbsp;the&nbsp;lab&nbsp;until&nbsp;stopped.<br>
+Otherwise,&nbsp;builds&nbsp;the&nbsp;menu&nbsp;by&nbsp;calling&nbsp;'self.<a href="#GlobalUI-build_menu">build_menu</a>()'&nbsp;method.<br>
+&nbsp;<br>
+:param&nbsp;use_lab:&nbsp;A&nbsp;boolean&nbsp;flag&nbsp;determining&nbsp;if&nbsp;the&nbsp;lab&nbsp;environment&nbsp;should&nbsp;be&nbsp;used.<br>
+:type&nbsp;use_lab:&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="GlobalUI-build_menu"><strong>build_menu</strong></a>(self)</dt><dd><span class="code">:return:&nbsp;Build&nbsp;and&nbsp;configure&nbsp;a&nbsp;menu&nbsp;with&nbsp;various&nbsp;options&nbsp;such&nbsp;as<br>
+calculators,&nbsp;ASCII&nbsp;arts,&nbsp;tests,&nbsp;API&nbsp;program,&nbsp;and&nbsp;data&nbsp;visualization.<br>
+The&nbsp;menu&nbsp;also&nbsp;includes&nbsp;stop&nbsp;options&nbsp;to&nbsp;exit.</span></dd></dl>
+
+<dl><dt><a name="GlobalUI-menu"><strong>menu</strong></a>(self)</dt><dd><span class="code">Builds&nbsp;and&nbsp;displays&nbsp;the&nbsp;menu.<br>
+&nbsp;<br>
+:return:&nbsp;None</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>USE_LAB</strong> = None</td></tr></table>
+</body></html>

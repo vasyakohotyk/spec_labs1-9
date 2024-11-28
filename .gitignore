@@ -1,0 +1,14 @@
+*log
+*/__pycache__
+__pycache__/*
+assets
+template
+*.pyc
+lab_template
+tasks.md
+*copy.json
+.vscode
+.env
+.coverage
+.idea
+src/data/lab8

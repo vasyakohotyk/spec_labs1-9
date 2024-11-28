@@ -1,0 +1,126 @@
+{
+  "camera_limits": {
+    "fovy_min": 30,
+    "fovy_max": 150,
+    "aspect_min": 1.3333333333333333,
+    "aspect_max": 2.3333333333333335,
+    "z_near_min": 0.1,
+    "z_near_max": 10,
+    "z_far_min": 10,
+    "z_far_max": 1000
+  },
+  "scenes_folder": "assets/3d ascii scenes/",
+  "print_settings": {
+    "title": " Here screen:",
+    "after_screen": " Don't forget adjust screen\n When finished setting scene, press ESC"
+  },
+  "ascii_window": {
+    "ascii_height": 15,
+    "ascii_chars": [
+      "@",
+      "#",
+      "S",
+      "%",
+      "?",
+      "*",
+      "+",
+      ";",
+      ":",
+      ",",
+      "."
+    ],
+    "color_palette": [
+      {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      },
+      {
+        "r": 0,
+        "g": 255,
+        "b": 0
+      },
+      {
+        "r": 0,
+        "g": 0,
+        "b": 255
+      },
+      {
+        "r": 255,
+        "g": 255,
+        "b": 0
+      },
+      {
+        "r": 255,
+        "g": 0,
+        "b": 255
+      },
+      {
+        "r": 0,
+        "g": 255,
+        "b": 255
+      }
+    ]
+  },
+  "window_settings": {
+    "title": "3D Scene with PyOpenGL",
+    "width": 400,
+    "height": 250,
+    "fov": 45,
+    "z_near": 1.0,
+    "z_far": 50.0
+  },
+  "camera_default_settings": {
+    "default_position": [
+      0.0,
+      0.0,
+      10.0
+    ],
+    "default_target": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "default_up_vector": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "default_pitch": 0.0,
+    "default_yaw": -90.0,
+    "default_fovy": 40.0,
+    "default_aspect": 1.7777777777777777,
+    "default_z_near": 0.1,
+    "default_z_far": 100.0
+  },
+  "shortcuts": {
+    "shift": {
+      "+": "zoom_up",
+      "-": "zoom_down"
+    },
+    "ctrl": {},
+    "alt": {},
+    "shift_ctrl": {},
+    "shift_alt": {},
+    "ctrl_alt": {},
+    "shift_ctrl_alt": {}
+  },
+  "action_keys": {
+    "1": "draw_points",
+    "2": "draw_edges",
+    "3": "draw_faces",
+    "a": "translate_left",
+    "d": "translate_right",
+    "w": "translate_forward",
+    "s": "translate_backward",
+    "r": "translate_up",
+    "f": "translate_down",
+    "+": "increase_render_distance",
+    "-": "decrease_render_distance",
+    "right": "rotate_x_plus",
+    "left": "rotate_x_minus",
+    "up": "rotate_y_plus",
+    "down": "rotate_y_minus",
+    "esc": "exit"
+  }
+}

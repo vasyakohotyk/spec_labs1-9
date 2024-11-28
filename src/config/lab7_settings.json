@@ -1,0 +1,61 @@
+{
+  "fields": {
+    "Book id": "items.id",
+    "Book title": "items.volumeInfo.title",
+    "Book subtitle": "items.volumeInfo.subtitle",
+    "Authors": "items.volumeInfo.authors",
+    "Publisher": "items.volumeInfo.publisher",
+    "Publishing date": "items.volumeInfo.publishedDate",
+    "Description": "items.volumeInfo.description",
+    "Industry ids": "items.volumeInfo.industryIdentifiers",
+    "Page count": "items.volumeInfo.pageCount",
+    "Categories": "items.volumeInfo.categories",
+    "Type": "items.volumeInfo.printType",
+    "Average rate": "items.volumeInfo.averageRating",
+    "Ratings count": "items.volumeInfo.ratingsCount",
+    "Image link": "items.volumeInfo.imageLinks.thumbnail",
+    "Language": "items.volumeInfo.language",
+    "Preview": "items.volumeInfo.previewLink"
+  },
+  "colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "white",
+    "magenta",
+    "cyan",
+    "black"
+  ],
+  "attributes": [
+    "bold",
+    "dim",
+    "normal"
+  ],
+  "languages": [
+    "en",
+    "ua"
+  ],
+  "max_results": 40,
+  "results_to_save": 10,
+  "user_settings_path": [
+    "data",
+    "lab7",
+    "user_settings.json"
+  ],
+  "history_path": [
+    "data",
+    "lab7",
+    "history.json"
+  ],
+  "logger_path": [
+    "logs",
+    "lab7",
+    "lab.log"
+  ],
+  "default_save_dir": [
+    "assets",
+    "api data"
+  ],
+  "default_file_name": "data.txt"
+}
