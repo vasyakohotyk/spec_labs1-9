@@ -6,7 +6,7 @@ class Operation:
     Represents a mathematical operation that can be unary or binary.
     Provides methods for formatting and retrieving operation details.
     """
-//l
+
     def __init__(self, operation, num1, num2=None, result=None):
         self.operation = operation
         self.num1 = num1
